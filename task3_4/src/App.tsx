@@ -1,14 +1,18 @@
-import './App.css'
-import {Header} from './components/Header/Header'
-import { Game } from './components/Game/Game'
+// src/App.tsx
+import React from 'react';
+import { Header } from './components/Header/Header';
+import { Game } from './components/Game/Game';
+import { Chats } from './components/Chats/Chats';
+import './App.css';
 
 function App() {
   return (
     <>
-     <Header/>
-     <Game/>
+      <Header />
+      <Game />
+      <Chats />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
