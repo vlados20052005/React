@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { playMove, resetGame } from '../../store';
+import { playMove, resetGame } from '../../features/gameSlice';
 import styles from './styles.module.scss';
 import { store } from '../../store';
 
@@ -58,7 +58,7 @@ export const Game: React.FC = () => {
     } else if (!board.includes(null)) {
       return "Draw!";
     }
-    return isPlayerX ? "Your turn:" : "Wait your opponent.";
+    return isPlayerX === isXNext ? "Your turn:" : "Wait your opponent.";
   };
 
   const renderSquare = (index: number): JSX.Element => (

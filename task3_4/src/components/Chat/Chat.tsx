@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store';
+import { addMessage } from '../../features/chatSlice';
 import styles from './styles.module.scss';
 
 interface Message {
@@ -10,11 +13,14 @@ interface Message {
 interface ChatProps {
   playerName: string;
   playerSymbol: string;
-  initialMessages: Message[];
+  isPlayer1: boolean;
 }
 
-export const Chat: React.FC<ChatProps> = ({ playerName, playerSymbol, initialMessages }) => {
-  const [messages, setMessages] = useState<Message[]>(initialMessages);
+export const Chat: React.FC<ChatProps> = ({ playerName, playerSymbol, isPlayer1 }) => {
+  const dispatch = useDispatch();
+  const messages = useSelector((state: RootState) => 
+    isPlayer1 ? state.chat.player1Messages : state.chat.player2Messages
+  );
   const [newMessage, setNewMessage] = useState('');
 
   const handleSendMessage = () => {
@@ -26,14 +32,14 @@ export const Chat: React.FC<ChatProps> = ({ playerName, playerSymbol, initialMes
       isOwnMessage: true,
     };
 
-    setMessages([...messages, message]);
+    dispatch(addMessage({ player: isPlayer1 ? 'Player1' : 'Player2', message }));
     setNewMessage('');
   };
 
   return (
     <div className={styles.chatContainer}>
       <div className={styles.header}>
-        <span className={styles.symbol}>{playerSymbol}</span>
+        <span className={styles.symbol}><img src={playerSymbol} alt="" width={15}/></span>
         <span className={styles.name}>{playerName}</span>
       </div>
       <div className={styles.messages}>
@@ -42,8 +48,10 @@ export const Chat: React.FC<ChatProps> = ({ playerName, playerSymbol, initialMes
             key={index}
             className={`${styles.message} ${msg.isOwnMessage ? styles.ownMessage : styles.receivedMessage}`}
           >
-            {msg.text}
-            <span className={styles.timestamp}>{msg.timestamp}</span>
+            <div className={styles.messageContent}>
+              {msg.text}
+              <span className={styles.timestamp}>{msg.timestamp}</span>
+            </div>
           </div>
         ))}
       </div>

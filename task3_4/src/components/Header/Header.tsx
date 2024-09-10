@@ -1,8 +1,7 @@
-// src/components/Header/Header.tsx
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { resetGame, resetScores } from '../../store';
-import { store } from '../../store'; // Add this import
+import { resetGame, resetScores } from '../../features/gameSlice';
+import { store } from '../../store';
 import styles from './styles.module.scss';
 
 type RootState = ReturnType<typeof store.getState>;
