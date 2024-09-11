@@ -1,0 +1,125 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+  background-color: #212121;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inputBlock {
+  position: relative;
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    font-size: 14px;
+    color: #f5f5f5;
+    margin-bottom: 5px;
+  }
+
+  input {
+    max-width: calc(100% - 20px);
+    width: 100%;
+    padding: 10px 0;
+    background-color: #212121;
+    border: none;
+    outline: none;
+    color: #ffffff;
+
+    &::placeholder {
+      color: #888888;
+    }
+  }
+  .passwordWrapper {
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 10px;
+    top: 50%;
+    max-width: 20px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .error {
+    font-size: 12px;
+    color: #ff6666;
+    margin-top: 5px;
+    height: 14px;
+  }
+}
+.line {
+  height: 1px;
+  background-color: #737373;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #f5f5f5;
+  }
+
+  label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border: 2px solid #888888;
+    border-radius: 2px;
+    background-color: #212121;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    background-color: #00c853;
+    border-color: #00c853;
+    content: "\2713";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00c853;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00b342;
+  }
+}
