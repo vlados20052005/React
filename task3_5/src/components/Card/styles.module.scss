@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 224px;
+  width: 100%;
+  
+  max-height: 405px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  border: 1px solid #0000001a;
+}
+.itemImg {
+  max-width: 224px;
+  width: 100%;
+  max-height: 245px;
+  height: 100%;
+}
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 16px 0;
+}
+.price {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 224px;
+  width: 100%;
+  min-height: 36px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background: #00ae1c;
+  color: white;
+  cursor: pointer;
+}
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95px;
+  width: 100%;
+  min-height: 100%;
+}
+.plus {
+  max-width: 16px;
+  width: 100%;
+  max-height: 16px;
+  height: 100%;
+}
+.addText {
+  font-size: 15px;
+  line-height: 20px;
+}
