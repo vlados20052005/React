@@ -1,0 +1,126 @@
+.wrapper {
+  display: flex;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 60px;
+}
+.mark {
+  max-width: 80px;
+  margin: 0 auto;
+}
+.text1 {
+  margin: 24px auto;
+  font-size: 32px;
+  letter-spacing: -0.26px;
+  color: #243573;
+}
+.text2 {
+  text-align: center;
+  letter-spacing: -0.26px;
+  color: #243573;
+}
+
+.numOfOrder {
+  margin: 24px auto;
+  letter-spacing: -0.26px;
+  font-weight: 700;
+  color: #243573;
+}
+
+.dateOrder {
+  margin-bottom: 40px;
+  line-height: 19.36px;
+  letter-spacing: -0.26px;
+  text-align: center;
+  color: #737373;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  min-height: 114px;
+  margin-bottom: 32px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  max-width: 433px;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+}
+.icon {
+  max-width: 16px;
+  margin-bottom: 2px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  min-height: 16px;
+  margin-bottom: 16px;
+
+  b {
+    margin-left: 8px;
+  }
+}
+
+.orderBlock {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 32px);
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+}
+.subtotal,
+.total {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 20px;
+  letter-spacing: -0.26px;
+  div {
+    max-width: 100px;
+    width: 100%;
+  }
+}
+.total {
+  margin: 0;
+  font-weight: 700;
+}
+.continue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  min-height: 36px;
+  margin: 32px 0;
+  border-radius: 8px;
+  background: #00ae1c;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  &:hover {
+    background: #009a19; 
+  }
+
+  &:active {
+    background: #007a14; 
+    transform: translateY(2px); 
+  }
+}

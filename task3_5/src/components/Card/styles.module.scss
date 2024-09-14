@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 224px;
+  width: 100%;
+  
+  max-height: 405px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  border: 1px solid #0000001a;
+}
+.itemImg {
+  max-width: 224px;
+  width: 100%;
+  max-height: 245px;
+  height: 100%;
+}
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 16px 0;
+}
+.price {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+
+
+.plus {
+  max-width: 16px;
+  width: 100%;
+  max-height: 16px;
+  height: 100%;
+}
+.addText {
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 224px;
+  width: 100%;
+  min-height: 36px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: none; /* Видаляє рамку */
+  background: #00ae1c; /* Default background */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95px;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  &:hover {
+    background: #009a19; /* Hover background */
+  }
+
+  &:active {
+    background: #007a14; /* Pressed background */
+    transform: translateY(2px); /* Simulate button press */
+
+
+
+  }
+
+  &:disabled {
+    background: #6c757d; /* Disabled background */
+    cursor: not-allowed;
+  }
+}
