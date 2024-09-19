@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+Design:
+- https://www.figma.com/file/JNr8hgMmfIp2SDF6Kk1KRP/Online-store-(Foxminded)?type=design&node-id=0-1&mode=design&t=BYu9FhgC3r9keJXx-0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a store app:
+- home page is a simple products list, user can add products to cart
+- click on the cart redirects to the checkout page, the checkout a multi steps form
+- on the cart page user can navigate to previous steps clicking on Breadcrumbs, but not to the next ones if the current step is not submitted
 
-Currently, two official plugins are available:
+Technical requirements:
+- feel free to use any state management choice to store the cart state
+- use react-router for routing or feel free to try any other routing library
+- each checkout step should be a separate route
+- use any form management library you like: formik, react-hook-form, etc
+- validate the form with yup: https://www.npmjs.com/package/yup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Advanced:
+- store the checkout steps state in the location.state: https://reactrouter.com/en/main/start/concepts#locations
 
-## Expanding the ESLint configuration
+You can get products data from: https://dummyjson.com/products
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Useful links:
+- https://reactrouter.com/en/main
+- https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router
+- https://medium.com/geekculture/best-react-routing-libraries-17a27bd302dd
