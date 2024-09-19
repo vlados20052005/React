@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+This UI kit will be used in the final project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Design:
+- https://www.figma.com/file/auOeu8XsK1l8qz3kGA1PZQ/UI-kit-(Foxminded)?type=design&node-id=0-1&mode=design&t=5bQFRFQsnatav4i5-0
 
-Currently, two official plugins are available:
+Based on the design, you need to create a custom components:
+- Button
+- Link
+- Input
+- Textarea
+- Checkbox
+- SelectMenu
+- Dropdown
+- ColorPicker
+- Modal
+- Datepicker
+- Toast
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technical requirements:
+- you're not allowed to use any UI libraries
+- feel free to use any styling approach you want (css/scss modules, styled components, etc)
 
-## Expanding the ESLint configuration
+* Advanced:
+- create a components documentation using storybook: https://storybook.js.org/docs/react/get-started/why-storybook
+- create a theme provider (light/dark) and use it in your components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Some open source UI libraries examples:
+- https://mui.com/material-ui/getting-started/
+- https://react-bootstrap.netlify.app/
+- https://ant.design/docs/react/introduce
+- https://tailwindcss.com/docs/guides/create-react-app
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Useful links:
+- https://medium.com/@leandrooriente/how-to-build-a-scalable-react-ui-kit-32d8caa44a56
