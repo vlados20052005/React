@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+Design:
+- https://www.figma.com/file/ae6Hy3TLBzrHorBOsJFEFU/Registration-(Foxminded)?type=design&node-id=0-1&mode=design&t=cAASlSg60tV4UfAS-0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a page with two identical forms but different form managing approaches:
+- uncontrolled components
+- controlled components
 
-Currently, two official plugins are available:
+For both approaches it's required to use pure React with no libraries
+In the future tasks you will be able to use libraries for managing forms:
+- uncontrolled approach: https://react-hook-form.com
+- controlled approach: https://formik.org/docs/overview
+- form validation: https://www.npmjs.com/package/yup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Optional:
+- add validation to the forms
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Useful links:
+- https://codedamn.com/news/reactjs/what-are-controlled-and-uncontrolled-components-in-react
+- https://www.scaler.com/topics/react/controlled-and-uncontrolled-components-in-react/
+- https://www.smashingmagazine.com/2020/10/react-validation-formik-yup/
