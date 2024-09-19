@@ -1,0 +1,25 @@
+/* src/components/Link/Link.module.scss */
+.link {
+    color: #28a745; /* Default link color */
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  
+    &:hover {
+      color: #218838; /* Hover link color */
+      text-decoration: underline; /* Underline on hover */
+    }
+  
+    &.pressed {
+      color: #1e7e34; /* Pressed link color */
+      text-decoration: underline; /* Underline on pressed */
+    }
+  
+    &.disabled {
+      color: #6c757d; /* Disabled link color */
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+  }
+  

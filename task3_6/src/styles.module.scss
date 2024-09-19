@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 35px;
+  margin-left: 20px;
+}
+.input {
+  max-width: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.checkbox,
+.textarea,
+.selectMenu,
+.modal,
+.dropdown,
+.dataPicker,
+.colourPicker,
+.toast {
+  margin-left: 10px;
+}
