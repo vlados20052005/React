@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+Choose starter kit for building your react app:
+- vite: https://vitejs.dev/guide
+- create-react-app: https://create-react-app.dev/docs/getting-started
+- vite vs cra: https://dev.to/musabdev/create-react-app-vs-vite-choosing-the-right-build-tool-for-your-project-3ni1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Design:
+- https://www.figma.com/file/7BuHbnzuhGF5fLRJtEeWLD/Gallery-(Foxminded)?type=design&node-id=0%3A1&mode=design&t=S9DSVbofelKOxUcS-1
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create a mobile gallery app:
+- display a list of photos using local .json file with data (Do not fetch data from api in this task)
+- you can get json example here: https://pixabay.com/api/?key=19026224-3e73fe5ba621ff9035f503b47
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Requirements:
+- for styling try one (or several) of these options: css/scss modules, styled-components, tailwind
+- create a separate component to display a photo card
+- use props to pass data to the component
 
-- Configure the top-level `parserOptions` property like this:
+Note: the mobile header on the design is just for demonstration purposes of mobile layout, you don't have to implement it. The same is applicable for all future tasks.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Useful links:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- https://react.dev/learn
+- https://blog.openreplay.com/using-css-modules-in-react
+- https://styled-components.com/docs/basics#getting-started
+- https://kentcdodds.com/blog/understanding-reacts-key-prop
+- https://blog.webdevsimplified.com/2022-07/react-folder-structure
