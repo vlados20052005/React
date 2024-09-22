@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+  }
+  
+  .label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #212529;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Шість кольорів в ряд */
+    grid-gap: 8px;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 230px; /* Ширина 230 пікселів */
+    height: 70px; /* Висота 70 пікселів */
+  }
+  
+  .colorBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: auto;
+  
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .selected {
+    border: 1px solid #333; /* Темна рамка для вибраного кольору */
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 4px; /* Більше закруглення для рамки */
+    box-shadow: 0 0 0 2px #ffffff; /* Білий відступ між кольором та рамкою */
+  }
+  

@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#root {
+  display: flex;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected{
+  background-color: #28a746c1;
+  color: white;
+  border-radius: 8px;
+}
+
