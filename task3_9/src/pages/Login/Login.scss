@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.login_wrapper {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login {
+    height: 18.75rem;
+    width: 31.25rem;
+    background-color: $color_white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.5rem;
+
+    .login_logo {
+      img {
+        height: 5rem;
+      }
+    }
+
+    button {
+      height: 2.25rem;
+      width: 18.75rem;
+    }
+
+    .secondary {
+      svg {
+        path {
+          stroke: none;
+        }
+      }
+    }
+  }
+}

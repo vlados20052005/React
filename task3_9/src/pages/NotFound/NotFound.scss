@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.not_found_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .not_found {
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: 4.375rem;
+      font-family: $font_family;
+      margin: 0;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-family: $font_family;
+      margin-bottom: 1rem;
+    }
+  }
+}
