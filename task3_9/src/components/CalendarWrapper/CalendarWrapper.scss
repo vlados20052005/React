@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  height: calc(100vh - 5rem);
+  flex-direction: row;
+  background-color: $color_gray_50;
+  justify-content: center;
+  column-gap: 2rem;
+}

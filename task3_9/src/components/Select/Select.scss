@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+
+.select_wrapper {
+  position: relative;
+
+  .select {
+    height: 2.5rem;
+    min-width: 5.5rem;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-bottom: 0.0625rem solid $color_blue_gray_900;
+
+    span {
+      font-family: $font_family;
+      font-size: 0.625rem;
+      font-weight: 700;
+      line-height: 0.75rem;
+      letter-spacing: -0.0125rem;
+      text-align: left;
+    }
+
+    button {
+      height: 1.25rem;
+      width: 100%;
+      font-family: $font_family;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      letter-spacing: -0.01875rem;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+
+  }
+
+  .options {
+    height: 11.25rem;
+    width: fit-content;
+    min-width: 5.375rem;
+    border: 0.0625rem solid $color_gray_200;
+    border-radius: 0.5rem;
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2.75rem;
+    z-index: 999;
+    background-color: $color_white;
+
+    &::-webkit-scrollbar {
+      width: 0.3125rem;
+      margin-right: 0.25rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color_gray_100;
+      border-radius: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $color_gray_500;
+    }
+
+    .option {
+      font-family: $font_family;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      letter-spacing: -0.01875rem;
+      text-align: left;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color_white_50;
+      }
+    }
+
+    .option_selected {
+      background-color: $color_white_100;
+    }
+
+    .disabled {
+      cursor: not-allowed;
+      background-color: $color_gray;
+
+      &:hover {
+        background-color: $color_gray;
+      }
+    }
+  }
+}
+
+

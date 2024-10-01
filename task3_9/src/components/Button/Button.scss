@@ -1,0 +1,79 @@
+@import "../../styles/variables";
+
+.btn {
+  width: auto;
+  height: auto;
+  max-height: 2.25rem;
+  padding: 0.5625rem 0.625rem;
+  gap: 0.25rem;
+  border-radius: 0.5rem;
+  font-family: $font_family_second;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: -0.025rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0.0625rem 0.125rem 0 $color_green_900;
+  justify-content: center;
+}
+
+.primary {
+  border: 0.0625rem solid $color_green;
+  background-color: $color_green;
+  color: $color_white;
+
+  &:disabled {
+    background-color: $color_green_600;
+    border: 0.0625rem solid $color_green_600;
+  }
+
+  &:hover {
+    border: 0.0625rem solid $color_green_300;
+    box-shadow: 0 0.125rem 0.125rem 0 $color_green_700;
+  }
+
+  &:active {
+    background-color: $color_green_500;
+    border: 0.0625rem solid $color_green_300;
+    box-shadow: 0 0.125rem 0.125rem 0 $color_green_700;
+  }
+}
+
+.secondary {
+  border: 0.0625rem solid $color_gray_100;
+  background-color: $color_white;
+  color: $color_blue_gray_900;
+
+  &:disabled {
+    background-color: $color_gray;
+    border: 0.0625rem solid $color_gray_400;
+    color: $color_gray_500;
+
+    svg {
+      path {
+        fill: $color_gray_500;
+        stroke: $color_gray_500;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $color_gray;
+    box-shadow: 0 0.0625rem 0.125rem 0 $color_gray_900;
+  }
+
+  &:active {
+    background-color: $color_gray_25;
+    border: 0.0625rem solid $color_gray_100;
+    box-shadow: 0 0.0625rem 0.125rem 0 $color_gray_900;
+  }
+
+  svg {
+    path {
+      stroke: $color_blue_gray_900;
+    }
+  }
+}

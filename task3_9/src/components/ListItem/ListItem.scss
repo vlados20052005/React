@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 14rem;
+  border-radius: 0.5rem;
+  background-color: $color_white;
+  min-height: 1.25rem;
+
+  .checkbox_wrapper {
+    margin: 0.438rem 0 0.438rem 0.5rem;
+    gap: 0;
+    height: auto;
+  }
+
+  .task_text {
+    display: inline-block;
+    max-width: 8.438rem;
+    width: 100%;
+    text-align: left;
+    font-family: $font_family;
+    font-weight: 400;
+    margin: 0.25rem 0;
+    word-wrap: anywhere;
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.019rem;
+  }
+
+  .task_text_isDone {
+    text-decoration: line-through;
+  }
+
+  .control {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin: 0.438rem 0.5rem;
+    width: 3rem;
+
+    svg {
+      cursor: pointer;
+
+      path {
+        fill: $color_blue_gray_900;
+      }
+    }
+  }
+
+  .modal_wrapper {
+    .modal_overlay {
+      .modal {
+        width: 32.625rem;
+        height: 10.813rem;
+        min-height: auto;
+
+        .title {
+          padding: 0.25rem 0;
+        }
+
+        .description {
+          .delete {
+            height: 100%;
+            width: 100%;
+
+            span {
+              font-family: $font_family;
+              font-size: 0.938rem;
+              font-weight: 400;
+              line-height: 1.25rem;
+              letter-spacing: -0.019rem;
+              text-align: left;
+            }
+
+            .controls {
+              .btn {
+                margin-top: 0.8rem;
+                margin-left: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hover {
+  &:hover {
+    background-color: $color_gray;
+  }
+}
